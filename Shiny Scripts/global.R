@@ -6,7 +6,7 @@ library(ggrepel)
 # Load and process draft_picks data
 draft_picks <- nflreadr::load_draft_picks(seasons = 1994:2024)
 
-# Select appropiate features
+# Select appropriate features
 draft_picks <- draft_picks %>% 
   select(round, pick, pfr_player_name, position, category, allpro, w_av) %>% 
   filter(!is.na(w_av))
