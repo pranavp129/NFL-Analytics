@@ -29,11 +29,11 @@ The data is sourced from **Pro Football Reference** using the [`nflverse`](https
 ## Folder Structure
 ```
 NFL-Analytics/
-│── R Scripts/
+│── Shiny Scripts/
 │   ├── ui.R   # Shiny UI script
 │   ├── server.R  # Shiny Server script
 │   ├── global.R  # Preprocessed draft data (loaded in both UI and Server)
-│── data/
+│── Other R Scripts
 │── README.md  # This file
 ```
 
