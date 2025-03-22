@@ -3,6 +3,8 @@ library(tidyverse)
 library(nflverse)
 library(ggrepel)
 
+source("r scripts/theme.R")
+
 server <- function(input, output) {
   
   filteredData <- reactive({
@@ -29,7 +31,8 @@ server <- function(input, output) {
            title = "Value by Draft Pick",
            subtitle = "Draft Pick vs. Approximate Value (AV)",
            caption = "**Made by: Pranav Pitchala; Data: Pro Football Reference**") +  
-      theme(legend.position = "right")
+      theme(legend.position = "right") +
+      nfl_analytics_theme()
   }, width = 500)
   
   output$myTable <- renderTable({
