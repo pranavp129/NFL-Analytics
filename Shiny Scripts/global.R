@@ -14,7 +14,7 @@ draft_picks <- draft_picks %>%
   select(round, pick, pfr_player_name, position, category, allpro, w_av) %>% 
   filter(!is.na(w_av))
 
-# Edit Categories
+# Edit Positions
 draft_picks <- draft_picks %>%
   mutate(category = case_when(
     category == "OG" ~ "OL", # combine OG into OL category
