@@ -4,6 +4,17 @@
 ## Overview
 This **Shiny App** provides an interactive tool for analyzing **NFL Draft Picks** and their **Approximate Value (AV)**. Users can explore draft data from **1994 to 2024**, filter by position, draft round, and pick range, and visualize trends in player value based on draft position.
 
+## Folder Structure
+```
+NFL-Analytics/
+│── Shiny Scripts/
+│   ├── ui.R   # Shiny UI script
+│   ├── server.R  # Shiny Server script
+│   ├── global.R  # Preprocessed draft data (loaded in both UI and Server)
+│── Other R Scripts
+│── README.md  # This file
+```
+
 ## Features
 - **Interactive Filters**: Select draft round, position, and pick range to analyze performance trends.
 - **Data Table**: Summarizes average Approximate Value (AV) by position and round.
@@ -26,18 +37,7 @@ The data is sourced from **Pro Football Reference** using the [`nflverse`](https
    ```r
    shiny::runApp()
    ```
-
-## Folder Structure
-```
-NFL-Analytics/
-│── Shiny Scripts/
-│   ├── ui.R   # Shiny UI script
-│   ├── server.R  # Shiny Server script
-│   ├── global.R  # Preprocessed draft data (loaded in both UI and Server)
-│── Other R Scripts
-│── README.md  # This file
-```
-
+   
 ## Contributions
 Feel free to submit issues or pull requests to enhance the app!
 
